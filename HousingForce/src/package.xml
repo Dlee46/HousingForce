@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+<<<<<<< HEAD
+=======
     <types>
         <members>*</members>
+<<<<<<< HEAD
         <name>ApexClass</name>
     </types>
     <types>
@@ -19,21 +22,16 @@
     <types>
         <members>*</members>
         <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>AppMenu</name>
+=======
+        <name>CustomApplication</name>
+>>>>>>> Danny
     </types>
     <types>
         <members>*</members>
         <name>ApprovalProcess</name>
     </types>
     <types>
-        <members>Case.Standard</members>
-        <members>Lead.Standard</members>
-        <name>AssignmentRule</name>
-    </types>
-    <types>
+<<<<<<< HEAD
         <members>*</members>
         <name>AuraDefinitionBundle</name>
     </types>
@@ -47,15 +45,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>Community</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>ConnectedApp</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomApplication</name>
     </types>
     <types>
         <members>*</members>
@@ -68,76 +58,6 @@
     <types>
         <members>*</members>
         <name>CustomMetadata</name>
-    </types>
-    <types>
-        <members>Account</members>
-        <members>AccountCleanInfo</members>
-        <members>AccountContactRole</members>
-        <members>Activity</members>
-        <members>Asset</members>
-        <members>AssetRelationship</members>
-        <members>AssistantProgress</members>
-        <members>Campaign</members>
-        <members>CampaignMember</members>
-        <members>Case</members>
-        <members>CaseContactRole</members>
-        <members>ChatterActivity</members>
-        <members>CollaborationGroup</members>
-        <members>CollaborationGroupMember</members>
-        <members>ConsumptionRate</members>
-        <members>ConsumptionSchedule</members>
-        <members>Contact</members>
-        <members>ContactCleanInfo</members>
-        <members>ContactRequest</members>
-        <members>ContentVersion</members>
-        <members>Contract</members>
-        <members>ContractContactRole</members>
-        <members>DandBCompany</members>
-        <members>DuplicateRecordItem</members>
-        <members>DuplicateRecordSet</members>
-        <members>EmailMessage</members>
-        <members>Event</members>
-        <members>ExchangeUserMapping</members>
-        <members>FeedItem</members>
-        <members>ForecastingCategoryMapping</members>
-        <members>Idea</members>
-        <members>Image</members>
-        <members>Lead</members>
-        <members>LeadCleanInfo</members>
-        <members>Macro</members>
-        <members>MacroAction</members>
-        <members>MacroInstruction</members>
-        <members>Opportunity</members>
-        <members>OpportunityCompetitor</members>
-        <members>OpportunityContactRole</members>
-        <members>OpportunityLineItem</members>
-        <members>Order</members>
-        <members>OrderItem</members>
-        <members>OrgDeleteRequest</members>
-        <members>PartnerRole</members>
-        <members>Pricebook2</members>
-        <members>PricebookEntry</members>
-        <members>Product2</members>
-        <members>ProductConsumptionSchedule</members>
-        <members>QuickText</members>
-        <members>Recommendation</members>
-        <members>RecordAction</members>
-        <members>RequestsForAccessSIQ</members>
-        <members>Scorecard</members>
-        <members>ScorecardAssociation</members>
-        <members>ScorecardMetric</members>
-        <members>Site</members>
-        <members>SocialPersona</members>
-        <members>Solution</members>
-        <members>StreamActivityAccess</members>
-        <members>StreamingChannel</members>
-        <members>Task</members>
-        <members>Topic</members>
-        <members>TopicAssignment</members>
-        <members>User</members>
-        <members>UserProvisioningRequest</members>
-        <members>*</members>
-        <name>CustomObject</name>
     </types>
     <types>
         <members>*</members>
@@ -157,40 +77,11 @@
     </types>
     <types>
         <members>*</members>
-        <name>CustomTab</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>DataCategoryGroup</name>
     </types>
     <types>
-        <members>unfiled$public</members>
-        <members>unfiled$public/MarketingProductInquiryResponse</members>
-        <members>unfiled$public/SalesNewCustomerEmail</members>
-        <members>unfiled$public/SupportCaseAssignmentNotification</members>
-        <members>unfiled$public/SupportCaseCreatedPhoneInquiries</members>
-        <members>unfiled$public/SupportCaseCreatedWebInquiries</members>
-        <members>unfiled$public/SupportCaseResponse</members>
-        <members>unfiled$public/SupportEscalatedCaseNotification</members>
-        <members>unfiled$public/SupportEscalatedCaseReassignment</members>
-        <members>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</members>
-        <members>unfiled$public/SupportSelfServiceNewLoginandPassword</members>
-        <members>unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE</members>
-        <members>unfiled$public/SupportSelfServiceResetPassword</members>
-        <members>unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>Case.Standard</members>
-        <name>EscalationRule</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>Housing_Force_UtilityBar</members>
         <name>FlexiPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Flow</name>
     </types>
     <types>
         <members>*</members>
@@ -206,10 +97,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>Layout</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>Letterhead</name>
     </types>
     <types>
@@ -221,52 +108,8 @@
         <name>PostTemplate</name>
     </types>
     <types>
-        <members>Analytics Cloud Integration User</members>
-        <members>Analytics Cloud Security User</members>
-        <members>Authenticated Website</members>
-        <members>Chatter External User</members>
-        <members>Chatter Free User</members>
-        <members>Chatter Moderator User</members>
-        <members>ContractManager</members>
-        <members>Cross Org Data Proxy User</members>
-        <members>Custom%3A Marketing Profile</members>
-        <members>Custom%3A Sales Profile</members>
-        <members>Custom%3A Support Profile</members>
-        <members>Customer Community Login User</members>
-        <members>Customer Community Plus Login User</members>
-        <members>Customer Community Plus User</members>
-        <members>Customer Community User</members>
-        <members>Customer Portal Manager Custom</members>
-        <members>Customer Portal Manager Standard</members>
-        <members>External Identity User</members>
-        <members>Force%2Ecom - App Subscription User</members>
-        <members>Force%2Ecom - Free User</members>
-        <members>Gold Partner User</members>
-        <members>High Volume Customer Portal User</members>
-        <members>HighVolumePortal</members>
-        <members>Identity User</members>
-        <members>MarketingProfile</members>
-        <members>Partner App Subscription User</members>
-        <members>Partner Community Login User</members>
-        <members>Partner Community User</members>
-        <members>PlatformPortal</members>
-        <members>ReadOnly</members>
-        <members>Retention Associate</members>
-        <members>Retention Manager</members>
-        <members>Silver Partner User</members>
-        <members>SolutionManager</members>
-        <members>Standard</members>
-        <members>StandardAul</members>
-        <members>Work%2Ecom Only User</members>
-        <name>Profile</name>
-    </types>
-    <types>
         <members>*</members>
         <name>Queue</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>QuickAction</name>
     </types>
     <types>
         <members>ApexDevNet</members>
@@ -275,34 +118,36 @@
     <types>
         <members>unfiled$public</members>
         <name>Report</name>
+=======
+        <members>Case.Standard</members>
+        <members>Lead.Standard</members>
+        <name>AssignmentRule</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ReportType</name>
+        <members>Retention Associate</members>
+        <members>Retention Manager</members>
+        <name>Profile</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Retention_Associate</members>
+        <members>Retention_Manager</members>
         <name>Role</name>
+>>>>>>> Danny
     </types>
     <types>
         <members>*</members>
-        <name>SamlSsoConfig</name>
+        <name>ApexTrigger</name>
     </types>
     <types>
+<<<<<<< HEAD
+        <members>Retention_Associate</members>
+        <members>Retention_Manager</members>
+        <members>InstallationRepairServices</members>
+        <name>Role</name>
+=======
         <members>*</members>
-        <name>Scontrol</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Settings</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>SharingSet</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>SiteDotCom</name>
+        <name>CustomTab</name>
+>>>>>>> Danny
     </types>
     <types>
         <members>*</members>
@@ -310,7 +155,125 @@
     </types>
     <types>
         <members>*</members>
+        <name>SharingSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Housing__c-Housing Layout</members>
+        <members>Housing_Assignment__c-Housing Assignment Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>Service_Appointment__c-Service Appointment Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Address</members>
+        <members>BusinessHours</members>
+        <members>Company</members>
+        <members>Name</members>
+        <members>Security</members>
+        <name>Settings</name>
+    </types>
+    <types>
+        <members>Housing__c</members>
+        <members>Housing_Assignment__c</members>
+        <members>Service_Appointment__c</members>
+        <members>Contact</members>
+        <members>ContactRequest</members>
+        <members>Case</members>
         <name>Workflow</name>
     </types>
+    <types>
+        <members>Retention Manager</members>
+        <members>Retention Associate</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Contact</members>
+        <members>*</members>
+<<<<<<< HEAD
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SiteDotCom</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingSet</name>
+=======
+        <name>Workflow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>Case.Standard</members>
+        <name>EscalationRule</name>
+>>>>>>> Danny
+    </types>
+<<<<<<< HEAD
+>>>>>>> 4f6de4f7bfb12be7f25578ada5db46fe10432a51
+=======
+    <types>
+        <members>*</members>
+        <name>Community</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomApplicationComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomPermission</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>HomePageLayout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>HomePageComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Letterhead</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+>>>>>>> Danny
     <version>38.0</version>
 </Package>
