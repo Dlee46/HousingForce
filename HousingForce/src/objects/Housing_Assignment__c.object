@@ -111,4 +111,14 @@
     <pluralLabel>Housing Assignments</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>CheckGender</fullName>
+        <active>true</active>
+        <description>Checks if this persons gender is correct for the right housing i.e male = male or female = female</description>
+        <errorConditionFormula>IF( OR((TEXT(Contact__r.Gender__c) = &apos;Male&apos; &amp;&amp;  TEXT(Housing__r.Group_Designation__c)  = &apos;Men only&apos;),
+(TEXT(Contact__r.Gender__c) = &apos;Female&apos; &amp;&amp;  TEXT(Housing__r.Group_Designation__c)  = &apos;Women only&apos;)
+),False,TRUE)</errorConditionFormula>
+        <errorDisplayField>Contact__c</errorDisplayField>
+        <errorMessage>This is wrong gender housing error</errorMessage>
+    </validationRules>
 </CustomObject>

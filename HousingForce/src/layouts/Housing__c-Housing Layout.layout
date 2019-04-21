@@ -16,7 +16,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Amenity__c</field>
+                <field>Amenities__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -29,6 +29,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Current_Occupants__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Address__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

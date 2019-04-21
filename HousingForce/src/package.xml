@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-<<<<<<< HEAD
-=======
     <types>
         <members>*</members>
-<<<<<<< HEAD
         <name>ApexClass</name>
     </types>
     <types>
@@ -22,16 +19,12 @@
     <types>
         <members>*</members>
         <name>ApexTrigger</name>
-=======
-        <name>CustomApplication</name>
->>>>>>> Danny
     </types>
     <types>
         <members>*</members>
         <name>ApprovalProcess</name>
     </types>
     <types>
-<<<<<<< HEAD
         <members>*</members>
         <name>AuraDefinitionBundle</name>
     </types>
@@ -118,44 +111,24 @@
     <types>
         <members>unfiled$public</members>
         <name>Report</name>
-=======
-        <members>Case.Standard</members>
-        <members>Lead.Standard</members>
-        <name>AssignmentRule</name>
-    </types>
-    <types>
-        <members>Retention Associate</members>
-        <members>Retention Manager</members>
-        <name>Profile</name>
-    </types>
-    <types>
-        <members>Retention_Associate</members>
-        <members>Retention_Manager</members>
-        <name>Role</name>
->>>>>>> Danny
     </types>
     <types>
         <members>*</members>
-        <name>ApexTrigger</name>
+        <name>ReportType</name>
     </types>
     <types>
-<<<<<<< HEAD
         <members>Retention_Associate</members>
         <members>Retention_Manager</members>
         <members>InstallationRepairServices</members>
         <name>Role</name>
-=======
-        <members>*</members>
-        <name>CustomTab</name>
->>>>>>> Danny
     </types>
     <types>
         <members>*</members>
-        <name>StaticResource</name>
+        <name>SamlSsoConfig</name>
     </types>
     <types>
         <members>*</members>
-        <name>SharingSet</name>
+        <name>Scontrol</name>
     </types>
     <types>
         <members>*</members>
@@ -193,7 +166,6 @@
     <types>
         <members>Contact</members>
         <members>*</members>
-<<<<<<< HEAD
         <name>CustomObject</name>
     </types>
     <types>
@@ -211,69 +183,6 @@
     <types>
         <members>*</members>
         <name>SharingSet</name>
-=======
-        <name>Workflow</name>
     </types>
-    <types>
-        <members>*</members>
-        <name>QuickAction</name>
-    </types>
-    <types>
-        <members>Case.Standard</members>
-        <name>EscalationRule</name>
->>>>>>> Danny
-    </types>
-<<<<<<< HEAD
->>>>>>> 4f6de4f7bfb12be7f25578ada5db46fe10432a51
-=======
-    <types>
-        <members>*</members>
-        <name>Community</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomApplicationComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomMetadata</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomPermission</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>FlexiPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>HomePageLayout</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>HomePageComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomLabels</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Layout</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Letterhead</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomObject</name>
-    </types>
->>>>>>> Danny
     <version>38.0</version>
 </Package>
