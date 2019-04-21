@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Housing</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Housings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Is this housing available? --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amenity --></label>
+        <name>Amenity__c</name>
+        <picklistValues>
+            <masterLabel>Gym</masterLabel>
+            <translation><!-- Gym --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parking</masterLabel>
+            <translation><!-- Parking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pool</masterLabel>
+            <translation><!-- Pool --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Occupants --></label>
+        <name>Current_Occupants__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Designation --></label>
+        <name>Group_Designation__c</name>
+        <picklistValues>
+            <masterLabel>Men only</masterLabel>
+            <translation><!-- Men only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women only</masterLabel>
+            <translation><!-- Women only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Max number of occupants --></help>
+        <label><!-- Max Occupants --></label>
+        <name>Max_Occupants__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The number of occupants exceed the limit assigned to this location. --></errorMessage>
+        <name>Maximum_Occupants</name>
+    </validationRules>
+</CustomObjectTranslation>
