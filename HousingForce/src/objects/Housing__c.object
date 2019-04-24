@@ -138,6 +138,33 @@
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
+        <fullName>Count_of_Services_Appointments__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Count of Services Appointments</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Occupants_NUMBER__c</fullName>
+        <externalId>false</externalId>
+        <formula>Current_Occupants__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Occupants NUMBER</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Current_Occupants__c</fullName>
         <externalId>false</externalId>
         <label>Current Occupants</label>
@@ -207,14 +234,14 @@
     <sharingModel>Read</sharingModel>
     <validationRules>
         <fullName>Check_ActiveCantBeDeactivated</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If the House has people living there. You cannot deactivate. This Also wont allow you to add in people if it is deactivated.</description>
         <errorConditionFormula>IF(Active__c = false &amp;&amp;  Current_Occupants__c != 0,true,false)</errorConditionFormula>
         <errorMessage>You cannot deactivate this housing unit if people are still living there or cant add people if its not activated.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Maximum_Occupants</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Number of employees in housing cannot be above the maximum occupant number</description>
         <errorConditionFormula>IF(Current_Occupants__c  &lt;=  Max_Occupants__c , false, true)</errorConditionFormula>
         <errorMessage>The number of occupants exceed the limit assigned to this location.</errorMessage>

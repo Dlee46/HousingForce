@@ -24,8 +24,8 @@
 <<<<<<< HEAD
                 <assignedTo>demacles0@project22.com</assignedTo>
 =======
-                <assignedTo>dlproject2test@revature.com</assignedTo>
->>>>>>> Testing
+                <assignedTo>charlynns@force.squad</assignedTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <assignedToTemplate>unfiled$public/SupportEscalatedCaseReassignment</assignedToTemplate>
                 <assignedToType>User</assignedToType>
                 <minutesToEscalation>120</minutesToEscalation>
@@ -33,8 +33,8 @@
 <<<<<<< HEAD
                 <notifyTo>demacles0@project22.com</notifyTo>
 =======
-                <notifyTo>dlproject2test@revature.com</notifyTo>
->>>>>>> Testing
+                <notifyTo>charlynns@force.squad</notifyTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <notifyToTemplate>unfiled$public/SupportEscalatedCaseNotification</notifyToTemplate>
             </escalationAction>
             <escalationStartTime>CaseCreation</escalationStartTime>
@@ -60,8 +60,8 @@
 <<<<<<< HEAD
                 <assignedTo>demacles0@project22.com</assignedTo>
 =======
-                <assignedTo>dlproject2test@revature.com</assignedTo>
->>>>>>> Testing
+                <assignedTo>charlynns@force.squad</assignedTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <assignedToTemplate>unfiled$public/SupportEscalatedCaseReassignment</assignedToTemplate>
                 <assignedToType>User</assignedToType>
                 <minutesToEscalation>360</minutesToEscalation>
@@ -69,8 +69,8 @@
 <<<<<<< HEAD
                 <notifyTo>demacles0@project22.com</notifyTo>
 =======
-                <notifyTo>dlproject2test@revature.com</notifyTo>
->>>>>>> Testing
+                <notifyTo>charlynns@force.squad</notifyTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <notifyToTemplate>unfiled$public/SupportEscalatedCaseNotification</notifyToTemplate>
             </escalationAction>
             <escalationStartTime>CaseCreation</escalationStartTime>
@@ -96,8 +96,8 @@
 <<<<<<< HEAD
                 <assignedTo>demacles0@project22.com</assignedTo>
 =======
-                <assignedTo>dlproject2test@revature.com</assignedTo>
->>>>>>> Testing
+                <assignedTo>charlynns@force.squad</assignedTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <assignedToTemplate>unfiled$public/SupportEscalatedCaseReassignment</assignedToTemplate>
                 <assignedToType>User</assignedToType>
                 <minutesToEscalation>240</minutesToEscalation>
@@ -105,8 +105,8 @@
 <<<<<<< HEAD
                 <notifyTo>demacles0@project22.com</notifyTo>
 =======
-                <notifyTo>dlproject2test@revature.com</notifyTo>
->>>>>>> Testing
+                <notifyTo>charlynns@force.squad</notifyTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <notifyToTemplate>unfiled$public/SupportEscalatedCaseNotification</notifyToTemplate>
             </escalationAction>
             <escalationStartTime>CaseCreation</escalationStartTime>
@@ -132,8 +132,8 @@
 <<<<<<< HEAD
                 <assignedTo>demacles0@project22.com</assignedTo>
 =======
-                <assignedTo>dlproject2test@revature.com</assignedTo>
->>>>>>> Testing
+                <assignedTo>charlynns@force.squad</assignedTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <assignedToTemplate>unfiled$public/SupportEscalatedCaseReassignment</assignedToTemplate>
                 <assignedToType>User</assignedToType>
                 <minutesToEscalation>480</minutesToEscalation>
@@ -141,8 +141,8 @@
 <<<<<<< HEAD
                 <notifyTo>demacles0@project22.com</notifyTo>
 =======
-                <notifyTo>dlproject2test@revature.com</notifyTo>
->>>>>>> Testing
+                <notifyTo>charlynns@force.squad</notifyTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <notifyToTemplate>unfiled$public/SupportEscalatedCaseNotification</notifyToTemplate>
             </escalationAction>
             <escalationStartTime>CaseCreation</escalationStartTime>
@@ -163,8 +163,8 @@
 <<<<<<< HEAD
                 <assignedTo>demacles0@project22.com</assignedTo>
 =======
-                <assignedTo>dlproject2test@revature.com</assignedTo>
->>>>>>> Testing
+                <assignedTo>charlynns@force.squad</assignedTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <assignedToTemplate>unfiled$public/SupportEscalatedCaseReassignment</assignedToTemplate>
                 <assignedToType>User</assignedToType>
                 <minutesToEscalation>720</minutesToEscalation>
@@ -172,8 +172,8 @@
 <<<<<<< HEAD
                 <notifyTo>demacles0@project22.com</notifyTo>
 =======
-                <notifyTo>dlproject2test@revature.com</notifyTo>
->>>>>>> Testing
+                <notifyTo>charlynns@force.squad</notifyTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <notifyToTemplate>unfiled$public/SupportEscalatedCaseNotification</notifyToTemplate>
             </escalationAction>
             <escalationStartTime>CaseCreation</escalationStartTime>
@@ -194,8 +194,8 @@
 <<<<<<< HEAD
                 <assignedTo>demacles0@project22.com</assignedTo>
 =======
-                <assignedTo>dlproject2test@revature.com</assignedTo>
->>>>>>> Testing
+                <assignedTo>charlynns@force.squad</assignedTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <assignedToTemplate>unfiled$public/SupportEscalatedCaseReassignment</assignedToTemplate>
                 <assignedToType>User</assignedToType>
                 <minutesToEscalation>1440</minutesToEscalation>
@@ -203,8 +203,8 @@
 <<<<<<< HEAD
                 <notifyTo>demacles0@project22.com</notifyTo>
 =======
-                <notifyTo>dlproject2test@revature.com</notifyTo>
->>>>>>> Testing
+                <notifyTo>charlynns@force.squad</notifyTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <notifyToTemplate>unfiled$public/SupportEscalatedCaseNotification</notifyToTemplate>
             </escalationAction>
             <escalationStartTime>CaseCreation</escalationStartTime>
@@ -225,8 +225,8 @@
 <<<<<<< HEAD
                 <assignedTo>demacles0@project22.com</assignedTo>
 =======
-                <assignedTo>dlproject2test@revature.com</assignedTo>
->>>>>>> Testing
+                <assignedTo>charlynns@force.squad</assignedTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <assignedToTemplate>unfiled$public/SupportEscalatedCaseReassignment</assignedToTemplate>
                 <assignedToType>User</assignedToType>
                 <minutesToEscalation>360</minutesToEscalation>
@@ -234,8 +234,8 @@
 <<<<<<< HEAD
                 <notifyTo>demacles0@project22.com</notifyTo>
 =======
-                <notifyTo>dlproject2test@revature.com</notifyTo>
->>>>>>> Testing
+                <notifyTo>charlynns@force.squad</notifyTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <notifyToTemplate>unfiled$public/SupportEscalatedCaseNotification</notifyToTemplate>
             </escalationAction>
             <escalationStartTime>CaseCreation</escalationStartTime>
@@ -256,8 +256,8 @@
 <<<<<<< HEAD
                 <assignedTo>demacles0@project22.com</assignedTo>
 =======
-                <assignedTo>dlproject2test@revature.com</assignedTo>
->>>>>>> Testing
+                <assignedTo>charlynns@force.squad</assignedTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <assignedToTemplate>unfiled$public/SupportEscalatedCaseReassignment</assignedToTemplate>
                 <assignedToType>User</assignedToType>
                 <minutesToEscalation>1080</minutesToEscalation>
@@ -265,8 +265,8 @@
 <<<<<<< HEAD
                 <notifyTo>demacles0@project22.com</notifyTo>
 =======
-                <notifyTo>dlproject2test@revature.com</notifyTo>
->>>>>>> Testing
+                <notifyTo>charlynns@force.squad</notifyTo>
+>>>>>>> d2bef74de79ea18ad8e3dc96da69e44bf17cc1b2
                 <notifyToTemplate>unfiled$public/SupportEscalatedCaseNotification</notifyToTemplate>
             </escalationAction>
             <escalationStartTime>CaseCreation</escalationStartTime>

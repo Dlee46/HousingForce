@@ -52,14 +52,87 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
+        <fullName>Cleaning_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Cleaning Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_of_Service__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Routine</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Temporary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Single Time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Cleaning</controllingFieldValue>
+                <valueName>Routine</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cleaning</controllingFieldValue>
+                <valueName>Temporary</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cleaning</controllingFieldValue>
+                <valueName>Single Time</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cleaning</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Company_Name__c</fullName>
         <externalId>false</externalId>
         <label>Company Name</label>
         <length>50</length>
-        <required>false</required>
+        <required>true</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <description>Date of scheduled service Appointment</description>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DayOfWeek__c</fullName>
+        <description>Grabs the day of the week</description>
+        <externalId>false</externalId>
+        <formula>WEEKDAY(Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DayOfWeek</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -75,18 +148,141 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
+    <fields>
+        <fullName>Maintenance_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_of_Service__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Routine</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Requested</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Maintenance</controllingFieldValue>
+                <valueName>Routine</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Maintenance</controllingFieldValue>
+                <valueName>Requested</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Maintenance</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Other_Reason__c</fullName>
+        <description>This is for the other reason picklist for both cleaning and maintance and if either one is picked</description>
+        <externalId>false</externalId>
+        <label>Other Reason</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Interval__c</fullName>
+        <description>How often cleaning the apartment, (how often housing is cleaned)</description>
+        <externalId>false</externalId>
+        <label>Service Interval</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time__c</fullName>
+        <description>The time of the scheduled service</description>
+        <externalId>false</externalId>
+        <label>Time</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Time</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_Service__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Service</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cleaning</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Maintenance</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
     <label>Service Appointment</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Company_Name__c</columns>
+        <columns>Date__c</columns>
+        <columns>Time__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <listViews>
+        <fullName>alll</fullName>
+        <columns>NAME</columns>
+        <columns>Cleaning_Reason__c</columns>
+        <columns>Company_Name__c</columns>
+        <columns>Housing__c</columns>
+        <columns>Type_of_Service__c</columns>
+        <columns>Date__c</columns>
+        <columns>Time__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>alll</label>
+    </listViews>
     <nameField>
-        <label>Service Appointment Name</label>
+        <displayFormat>S{00000000}</displayFormat>
+        <label>Service Appointment ID</label>
         <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Service Appointments</pluralLabel>
     <searchLayouts/>
     <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Other_Reason_Required</fullName>
+        <active>true</active>
+        <description>This is a validation for checking if other is selected in either the mainance or cleaning reasons</description>
+        <errorConditionFormula>IF((ISPICKVAL(Cleaning_Reason__c,&apos;Other&apos;)&amp;&amp; ISBLANK(Other_Reason__c)) || (ISPICKVAL(Maintenance_Reason__c,&apos;Other&apos;)&amp;&amp;ISBLANK(Other_Reason__c)),true,false)</errorConditionFormula>
+        <errorDisplayField>Other_Reason__c</errorDisplayField>
+        <errorMessage>Reason for selecting other(This is Required).</errorMessage>
+    </validationRules>
 </CustomObject>

@@ -10,9 +10,9 @@
     <tab>standard-Contact</tab>
     <tab>Housing_Assignment__c</tab>
     <tab>Housing__c</tab>
-    <tab>Service_Appointment__c</tab>
     <tab>standard-ProcessInstanceWorkitem</tab>
     <tab>standard-Task</tab>
+    <tab>Service_Appointment__c</tab>
     <uiType>Lightning</uiType>
     <utilityBar>Housing_Force_UtilityBar</utilityBar>
 </CustomApplication>

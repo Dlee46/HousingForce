@@ -47,7 +47,85 @@ public static void CreateTask(String Comments, Integer Subject)
     DataBase.insert(new list<Task>{CreateTask},false);
     
 }
-
-    
+/**************************************************************************
+ * 	Purpose: To Check the day of the week and return a string value of the week
+ * 	Author:	 Steven Zhao
+ * 	Created Date:	4/23/19
+ * 	Last Modifyied Author:Steven Zhao
+ *  Last Modifyied Date: 4/23/19
+ * 	Description:	
+ *************************************************************************/     
+    public static String returnDayofWeek(integer dayNumber)
+    {
+        switch on dayNumber
+        {
+            when 1
+            {
+                return 'Sunday';
+            }
+            when 2 	
+            {
+                return 'Monday';
+            }
+            when 3 
+            {
+                return 'Tuesday';
+            }
+            when 4
+            {
+                return 'Wednesday';
+            }
+            when 5
+            {
+                return 'Thursday';
+            }
+            when 6
+            {
+                return 'Friday';
+            }
+            when 7
+            {
+                return 'Saturday';
+            }
+            when else
+            {
+             return null;
+            }
+        }
+        
+    }
+   /**************************************************************************
+ * 	Purpose: To convert days to week and if less than 7 day return days instead
+ * 	Author:	 Steven Zhao
+ * 	Created Date:	4/23/19
+ * 	Last Modifyied Author:Steven Zhao
+ *  Last Modifyied Date: 4/23/19
+ * 	Description:	
+ *************************************************************************/     
+   public static string returnWeekANDdays (integer numberDays)
+    {
+        integer week =0;
+        integer Days = numberDays;
+        if(numberDays < 7)
+        {
+            Return numberDays + 'Days ' ; 
+        }
+        else
+        {
+            while(Days >= 7)
+            {
+                Days = Days-7;
+                week++ ;
+            }
+            if(Days == 0)
+            {
+                return  week + 'Weeks: ';
+            }
+            else
+                return  week +'Weeks: ' + Days+' Days: ';
+            
+        }
+       
+    } 
     
 }
