@@ -99,11 +99,15 @@
     </layouts>
     <startsWith>Consonant</startsWith>
     <validationRules>
+
         <errorMessage><!-- You cannot deactivate this housing unit if people are still living there or cant add people if its not activated. --></errorMessage>
         <name>Check_ActiveCantBeDeactivated</name>
-    </validationRules>
-    <validationRules>
+
         <errorMessage><!-- The number of occupants exceed the limit assigned to this location. --></errorMessage>
         <name>Maximum_Occupants</name>
+
+        <errorMessage><!-- You cannot add people if the housing is deactivated. --></errorMessage>
+        <name>Check_ifDeactivatedCantAddTenants</name>
+
     </validationRules>
 </CustomObjectTranslation>

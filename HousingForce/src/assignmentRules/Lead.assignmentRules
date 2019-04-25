@@ -4,7 +4,11 @@
         <fullName>Standard</fullName>
         <active>true</active>
         <ruleEntry>
+<<<<<<< HEAD
             <assignedTo>demacles0@project22.com</assignedTo>
+=======
+            <assignedTo>dlproject2test@revature.com</assignedTo>
+>>>>>>> Testing
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.Country</field>
@@ -13,7 +17,11 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
+<<<<<<< HEAD
             <assignedTo>demacles0@project22.com</assignedTo>
+=======
+            <assignedTo>dlproject2test@revature.com</assignedTo>
+>>>>>>> Testing
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.Country</field>
