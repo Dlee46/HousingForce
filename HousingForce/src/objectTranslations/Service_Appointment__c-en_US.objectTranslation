@@ -9,13 +9,85 @@
         <value>Service Appointments</value>
     </caseValues>
     <fields>
+        <label><!-- Cleaning Reason --></label>
+        <name>Cleaning_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routine</masterLabel>
+            <translation><!-- Routine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Time</masterLabel>
+            <translation><!-- Single Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporary</masterLabel>
+            <translation><!-- Temporary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Company Name --></label>
         <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DayOfWeek --></label>
+        <name>DayOfWeek__c</name>
     </fields>
     <fields>
         <label><!-- Housing --></label>
         <name>Housing__c</name>
         <relationshipLabel><!-- Service Appointments --></relationshipLabel>
     </fields>
+    <fields>
+        <label><!-- Maintenance Reason --></label>
+        <name>Maintenance_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routine</masterLabel>
+            <translation><!-- Routine --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Reason --></label>
+        <name>Other_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Interval --></label>
+        <name>Service_Interval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time --></label>
+        <name>Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Service --></label>
+        <name>Type_of_Service__c</name>
+        <picklistValues>
+            <masterLabel>Cleaning</masterLabel>
+            <translation><!-- Cleaning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance</masterLabel>
+            <translation><!-- Maintenance --></translation>
+        </picklistValues>
+    </fields>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Reason for selecting other(This is Required). --></errorMessage>
+        <name>Other_Reason_Required</name>
+    </validationRules>
 </CustomObjectTranslation>

@@ -21,5 +21,6 @@
     <tab>standard-OtherUserProfile</tab>
     <tab>standard-Case</tab>
     <tab>standard-Forecasting3</tab>
+    <tab>Service_Appointment__c</tab>
     <uiType>Lightning</uiType>
 </CustomApplication>

@@ -1,5 +1,5 @@
 /**************************************************************************
- * 	Purpose: Helper class for the trigger on Housing_Assignment
+ * 	Purpose: Helper class for the trigger on Housing_Assignment ---curent class is not being use so get rid of it
  * 	Author:	 Steven Zhao
  * 	Created Date:	4/16/19
  * 	Last Modifyied Author:

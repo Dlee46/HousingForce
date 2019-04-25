@@ -62,6 +62,54 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Amenities__c</fullName>
+        <externalId>false</externalId>
+        <label>Amenities</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Gym</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parking_Passes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pool</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parking: Gated</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parking: Driveway</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parking: Garage</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
         <fullName>Amenity__c</fullName>
         <externalId>false</externalId>
         <label>Amenity</label>
@@ -88,6 +136,33 @@
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Count_of_Services_Appointments__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Count of Services Appointments</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Occupants_NUMBER__c</fullName>
+        <externalId>false</externalId>
+        <formula>Current_Occupants__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Occupants NUMBER</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Current_Occupants__c</fullName>
@@ -139,6 +214,13 @@
     <label>Housing</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Active__c</columns>
+        <columns>Group_Designation__c</columns>
+        <columns>Current_Occupants__c</columns>
+        <columns>Max_Occupants__c</columns>
+        <columns>Address__c</columns>
+        <columns>Amenities__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -151,25 +233,19 @@
     <searchLayouts/>
     <sharingModel>Read</sharingModel>
     <validationRules>
-<<<<<<< HEAD
+
         <fullName>Check_ActiveCantBeDeactivated</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If the House has people living there. You cannot deactivate. This Also wont allow you to add in people if it is deactivated.</description>
         <errorConditionFormula>IF(Active__c = false &amp;&amp;  Current_Occupants__c != 0,true,false)</errorConditionFormula>
         <errorMessage>You cannot deactivate this housing unit if people are still living there or cant add people if its not activated.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Check_ifDeactivatedCantAddTenants</fullName>
-        <active>false</active>
-        <description>This checks if the the active box is deactivated you cant add in new people</description>
-        <errorConditionFormula>false</errorConditionFormula>
-        <errorMessage>You cannot add people if the housing is deactivated.</errorMessage>
-=======
         <fullName>Maximum_Occupants</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Number of employees in housing cannot be above the maximum occupant number</description>
         <errorConditionFormula>IF(Current_Occupants__c  &lt;=  Max_Occupants__c , false, true)</errorConditionFormula>
         <errorMessage>The number of occupants exceed the limit assigned to this location.</errorMessage>
->>>>>>> Testing
+
     </validationRules>
 </CustomObject>
