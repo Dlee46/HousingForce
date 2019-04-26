@@ -1,4 +1,4 @@
-public class OutBoundEmail 
+public with sharing class OutBoundEmail 
 {
 /**************************************************************************
  * 	Purpose: to send an email with the same subject and body to many different people

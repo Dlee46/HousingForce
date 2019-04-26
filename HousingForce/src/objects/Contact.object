@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>AddCampaign</actionName>
@@ -461,7 +460,3 @@
         <errorMessage>This person already have a housing unit</errorMessage>
     </validationRules>
 </CustomObject>
-=======
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"/>
-
->>>>>>> Testing

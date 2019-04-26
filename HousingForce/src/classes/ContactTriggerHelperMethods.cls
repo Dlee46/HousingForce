@@ -1,4 +1,4 @@
-public class ContactTriggerHelperMethods 
+public with sharing class ContactTriggerHelperMethods 
 {
 /**************************************************************************
  * 	Purpose: To check if the contact has an email
@@ -13,14 +13,20 @@ public class ContactTriggerHelperMethods
 
     public static void CheckIfEmployeeHasNewHousingApproved(List<Contact> newList, Map<id,Contact> oldMap)
     {
-        list<Contact> CheckedList = new list<Contact>();
-        for(Contact tempC : newlist)
-        {
-            if(tempC.Email != null)
-            	CheckedList.add(TempC);
-        }
-		if(CheckedList != null && CheckedList.Size()>0)    
-        	SendEmailToApprovedContact(CheckedList,oldMap);
+    	if(newlist != null && oldMap != null)
+    	{
+	        list<Contact> CheckedList = new list<Contact>();
+	        for(Contact tempC : newlist)
+	        {
+	            if(tempC.Email != null && tempC.Email.contains('@'))
+	            {
+	            	CheckedList.add(TempC);
+	            }
+	            	
+	        }
+			if(CheckedList != null && CheckedList.Size()>0)    
+	        	SendEmailToApprovedContact(CheckedList,oldMap);
+    	}
     }
 /**************************************************************************
  * 	Purpose: Sends out emails to the new Approved Contact
@@ -50,7 +56,7 @@ public class ContactTriggerHelperMethods
                     
                     if(string.valueOf(tempC.Housing_Status__c) == OrgContants.PICKLISTVALUE_HOUSING_ASSIGNMENT[1].getlabel() 
                        &&string.valueOf(tempContact.Housing_Status__c) == OrgContants.PICKLISTVALUE_HOUSING_ASSIGNMENT[0].getLabel()
-                       &&TempC.Housing_Assignment_Count__c>0)
+                       &&TempC.Housing_Assignment_Count__c>0 && tempC.Email != null)
                     {
                         emailList.add(tempC.Email);
                         if(cleaningService.get(TempC.id)==null)
@@ -71,7 +77,7 @@ public class ContactTriggerHelperMethods
             if(listOfEmail != null)
             {
               
-                Messaging.sendEmail(listOfEmail);
+               // Messaging.sendEmail(listOfEmail);
                 listOfEmail.clear();
                 
                 

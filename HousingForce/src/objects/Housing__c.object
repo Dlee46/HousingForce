@@ -110,34 +110,6 @@
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
-        <fullName>Amenity__c</fullName>
-        <externalId>false</externalId>
-        <label>Amenity</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Gym</fullName>
-                    <default>false</default>
-                </value>
-                <value>
-                    <fullName>Parking</fullName>
-                    <default>false</default>
-                </value>
-                <value>
-                    <fullName>Pool</fullName>
-                    <default>false</default>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-        <visibleLines>4</visibleLines>
-    </fields>
-    <fields>
         <fullName>Count_of_Services_Appointments__c</fullName>
         <defaultValue>0</defaultValue>
         <externalId>false</externalId>
@@ -211,6 +183,20 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>Slots_Left__c</fullName>
+        <externalId>false</externalId>
+        <formula>Max_Occupants__c -  Current_Occupants__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Slots Left</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
     <label>Housing</label>
     <listViews>
         <fullName>All</fullName>
@@ -233,7 +219,6 @@
     <searchLayouts/>
     <sharingModel>Read</sharingModel>
     <validationRules>
-
         <fullName>Check_ActiveCantBeDeactivated</fullName>
         <active>false</active>
         <description>If the House has people living there. You cannot deactivate. This Also wont allow you to add in people if it is deactivated.</description>
@@ -246,6 +231,5 @@
         <description>Number of employees in housing cannot be above the maximum occupant number</description>
         <errorConditionFormula>IF(Current_Occupants__c  &lt;=  Max_Occupants__c , false, true)</errorConditionFormula>
         <errorMessage>The number of occupants exceed the limit assigned to this location.</errorMessage>
-
     </validationRules>
 </CustomObject>

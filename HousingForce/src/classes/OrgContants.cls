@@ -1,12 +1,12 @@
 /**************************************************************************
  * 	Purpose: Contant Values that the org uses
  * 	Author:	 Steven Zhao
- * 	Created Date:	
- * 	Last Modifyied Author:
- *  Last Modifyied Date:
+ * 	Created Date:	4//12/19
+ * 	Last Modifyied Author:Steven Zhao
+ *  Last Modifyied Date:4/24/19
  * 	Description:	Mostly just picklistvalues
  *************************************************************************/ 
-public class OrgContants
+public with sharing class OrgContants
 {
     public static Final list<schema.PicklistEntry>  PICKLISTVALUE_EmloyeeStatus = Contact.Employee_Status__c.getDescribe().getpicklistValues();
     public static Final list<schema.PicklistEntry>  PICKLISTVALUE_GENDER = Contact.Gender__c.getDescribe().getpicklistValues();

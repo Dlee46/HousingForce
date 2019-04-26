@@ -6,7 +6,7 @@
  *  Last Modifyied Date:4/16/19
  * 	Description:	
  *************************************************************************/ 
-public class GeneralHelpers
+public with sharing class GeneralHelpers
 {
 /**************************************************************************
  * 	Purpose: To Pass back a list of ids for contacts
@@ -35,17 +35,21 @@ public static list<ID> returnIDs(list<sObject> newlist)
  *  Last Modifyied Date:4/21/19
  * 	Description:	This is ment for alerting the user that emails were sent. After something has been Approved
  *************************************************************************/     
-public static void CreateTask(String Comments, Integer Subject)
+public static void CreateTask(String Comments, Integer Status)
 {
-    Task CreateTask = new Task();
-    CreateTask.Subject = OrgContants.PICKLISTVALUE_TASK_SUBJECT[1].getLabel();
-    CreateTask.Status =  OrgContants.PICKLISTVALUE_TASK_STATUS[Subject].getLabel();
-    CreateTask.Priority =OrgContants.PICKLISTVALUE_TASK_PRIORITY[2].getLabel();
-    CreateTask.ActivityDate = Date.today();
-    CreateTask.Description = Comments;
-    CreateTAsk.OwnerId =UserInfo.getUserId();
-    DataBase.insert(new list<Task>{CreateTask},false);
-    
+   if(comments != null && Status != null)
+   {
+	
+       Task CreateTask = new Task();
+       CreateTask.Subject = OrgContants.PICKLISTVALUE_TASK_SUBJECT[1].getLabel();
+       CreateTask.Status =  OrgContants.PICKLISTVALUE_TASK_STATUS[Status].getLabel();
+       CreateTask.Priority = OrgContants.PICKLISTVALUE_TASK_PRIORITY[2].getLabel();
+       CreateTask.ActivityDate = Date.today();
+       CreateTask.Description = Comments;
+       CreateTAsk.OwnerId =UserInfo.getUserId();
+       if(createTask != null)
+           DataBase.insert(new list<Task>{CreateTask},false);
+   }
 }
 /**************************************************************************
  * 	Purpose: To Check the day of the week and return a string value of the week
@@ -102,30 +106,33 @@ public static void CreateTask(String Comments, Integer Subject)
  *  Last Modifyied Date: 4/23/19
  * 	Description:	
  *************************************************************************/     
-   public static string returnWeekANDdays (integer numberDays)
+    public static string returnWeekANDdays (integer numberDays)
     {
-        integer week =0;
-        integer Days = numberDays;
-        if(numberDays < 7)
+        if(numberDays != null && numberDays >= 0)
         {
-            Return numberDays + 'Days ' ; 
-        }
-        else
-        {
-            while(Days >= 7)
+            integer week =0;
+            integer Days = numberDays;
+            if(numberDays < 7)
             {
-                Days = Days-7;
-                week++ ;
-            }
-            if(Days == 0)
-            {
-                return  week + 'Weeks: ';
+                Return numberDays + 'Days ' ; 
             }
             else
-                return  week +'Weeks: ' + Days+' Days: ';
-            
-        }
-       
+            {
+                while(Days >= 7)
+                {
+                    Days = Days-7;
+                    week++ ;
+                }
+                if(Days == 0)
+                {
+                    return  week + 'Weeks: ';
+                }
+                else
+                    return  week +'Weeks: ' + Days+' Days: ';
+                
+            }
+        }else
+        	return null;
     } 
     
 }
