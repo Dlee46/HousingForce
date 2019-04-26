@@ -9,9 +9,27 @@
         <feedItemType>EmailMessageEvent</feedItemType>
     </caseFeedItemSettings>
     <closeCaseThroughStatusChange>false</closeCaseThroughStatusChange>
+<<<<<<< HEAD
     <defaultCaseOwner>demacles0@project22.com</defaultCaseOwner>
     <defaultCaseOwnerType>User</defaultCaseOwnerType>
     <defaultCaseUser>demacles0@project22.com</defaultCaseUser>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <defaultCaseOwner>dlproject2test@revature.com</defaultCaseOwner>
+    <defaultCaseOwnerType>User</defaultCaseOwnerType>
+    <defaultCaseUser>dlproject2test@revature.com</defaultCaseUser>
+=======
+    <defaultCaseOwner>charlynns@force.squad</defaultCaseOwner>
+    <defaultCaseOwnerType>User</defaultCaseOwnerType>
+    <defaultCaseUser>charlynns@force.squad</defaultCaseUser>
+>>>>>>> 4f6de4f7bfb12be7f25578ada5db46fe10432a51
+=======
+    <defaultCaseOwner>dlproject2test@revature.com</defaultCaseOwner>
+    <defaultCaseOwnerType>User</defaultCaseOwnerType>
+    <defaultCaseUser>dlproject2test@revature.com</defaultCaseUser>
+>>>>>>> Danny
+>>>>>>> Testing
     <emailToCase>
         <enableEmailToCase>false</enableEmailToCase>
     </emailToCase>

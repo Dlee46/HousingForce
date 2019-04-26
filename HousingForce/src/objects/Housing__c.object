@@ -219,6 +219,7 @@
     <searchLayouts/>
     <sharingModel>Read</sharingModel>
     <validationRules>
+
         <fullName>Check_ActiveCantBeDeactivated</fullName>
         <active>false</active>
         <description>If the House has people living there. You cannot deactivate. This Also wont allow you to add in people if it is deactivated.</description>
@@ -231,5 +232,6 @@
         <description>Number of employees in housing cannot be above the maximum occupant number</description>
         <errorConditionFormula>IF(Current_Occupants__c  &lt;=  Max_Occupants__c , false, true)</errorConditionFormula>
         <errorMessage>The number of occupants exceed the limit assigned to this location.</errorMessage>
+
     </validationRules>
 </CustomObject>
