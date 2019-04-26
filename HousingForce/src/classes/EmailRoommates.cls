@@ -91,7 +91,7 @@ public static String textBody(List<String> name)
                             if(emailList != null && emailList.size() > 0)
                             {
                                 outBoundEmails=OutBoundEmail.Create_Email(emailList, subject, textBody(namelist));
-                               // Messaging.sendEmail(outBoundEmails);
+                                Messaging.sendEmail(outBoundEmails);
                                 GeneralHelpers.CreateTask('Emails Sent to: ' + nameList, 2);
                                 emailList.clear();
                                 namelist.clear();
