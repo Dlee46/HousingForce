@@ -1,4 +1,4 @@
-public WITH SHARING class ServiceAppointmentTriggerHelper 
+public with sharing class ServiceAppointmentTriggerHelper 
 {
     /**************************************************************************
 * 	Purpose:  to check the type of Service being created, checking if its either cleaning or maintaince
@@ -101,24 +101,28 @@ public WITH SHARING class ServiceAppointmentTriggerHelper
 *************************************************************************/
     public static map<id,list<String>> queryForContacts(list<id> newIDlist)
     {
-        Map<id,list<String>> contactEmails = new Map<id,list<String>>();
-        for(housing__c tempH : [SELECT Id, (SELECT CONTACT__r.Email FROM HOUSING_ASSIGNMENTS__R) from housing__C where CURRENT_OCCUPANTS__C != 0 AND ID IN :newIDlist])
-        {
-            for(Id tempID : newIDlist)
-            {
-                if(tempId == tempH.id)
-                {
-                    list<String> emailList = new list<String>();
-                    for(Housing_Assignment__c tempHA : tempH.Housing_Assignments__r)
-                    {
-                        emailList.add(tempHA.Contact__r.Email);
-                    }
-                    if(contactEmails.get(tempId) == null)
-                        contactEmails.put(TempH.id,emailList);
-                }
-            }
-        }
-        return contactEmails;
+    	if(newIDlist != null && newIDlist.size()>0)
+    	{
+	        Map<id,list<String>> contactEmails = new Map<id,list<String>>();
+	        for(housing__c tempH : [SELECT Id, (SELECT CONTACT__r.Email FROM HOUSING_ASSIGNMENTS__R) from housing__C where CURRENT_OCCUPANTS__C != 0 AND ID IN :newIDlist])
+	        {
+	            for(Id tempID : newIDlist)
+	            {
+	                if(tempId == tempH.id)
+	                {
+	                    list<String> emailList = new list<String>();
+	                    for(Housing_Assignment__c tempHA : tempH.Housing_Assignments__r)
+	                    {
+	                        emailList.add(tempHA.Contact__r.Email);
+	                    }
+	                    if(contactEmails.get(tempId) == null)
+	                        contactEmails.put(TempH.id,emailList);
+	                }
+	            }
+	        }
+	        	return contactEmails;
+	    	}
+    	return null;
     }	
     /**************************************************************************
 * 	Purpose:  creates emails and send the email
@@ -130,19 +134,21 @@ public WITH SHARING class ServiceAppointmentTriggerHelper
 *************************************************************************/	
     public static void CreateAndSendEmail(list<id> housingid, string subject ,list<Service_Appointment__c> newlist,map<id,list<string>> contactEmail,integer serviceType)
     {	
-        for(Service_Appointment__c tempSAC:newlist)
-        {
-            for(id tempId:housingid)
-            {
-                if(tempId == tempSAC.Housing__c)
-                {//Service_Interval__c
-                    String tBody = textBody(serviceType,integer.valueOf(tempSAC.Service_Interval__c),integer.valueOf(tempSAC.DayOfWeek__c),tempSAC.Date__C,tempSAC.Time__C);
-                    list<Messaging.SingleEmailMessage> newEmail = OutBoundEmail.Create_Email(contactEmail.get(tempId),subject,tBody);
-                    System.debug(newEmail);
-                    Messaging.sendEmail(newEmail);
-                }
-            }
-        }
+    	if(housingid != null && subject != null && newlist != null &&  contactEmail != null && serviceType !=null)
+    	{
+	        for(Service_Appointment__c tempSAC:newlist)
+	        {
+	            for(id tempId:housingid)
+	            {
+	                if(tempId == tempSAC.Housing__c)
+	                {//Service_Interval__c
+	                    String tBody = textBody(serviceType,integer.valueOf(tempSAC.Service_Interval__c),integer.valueOf(tempSAC.DayOfWeek__c),tempSAC.Date__C,tempSAC.Time__C);
+	                    list<Messaging.SingleEmailMessage> newEmail = OutBoundEmail.Create_Email(contactEmail.get(tempId),subject,tBody);
+	                  //  Messaging.sendEmail(newEmail);
+	                }
+	            }
+	        }	
+    	}
     }
     /**************************************************************************
 * 	Purpose:  The body for the housing text body
@@ -152,7 +158,7 @@ public WITH SHARING class ServiceAppointmentTriggerHelper
 *  Last Modifyied Date: 4/24/19
 * 	Description:	
 *************************************************************************/	
-    public static string textBody( integer Service,integer numberDays, integer dayofWeek, date serviceDate, time serviceTime)
+    public static string textBody(integer Service,integer numberDays, integer dayofWeek, date serviceDate, time serviceTime)
     {
         //if service is 0 it means cleaning otherwise if its 1 it means maintance
         if(Service == 0 )

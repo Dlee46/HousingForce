@@ -46,22 +46,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Amenity --></label>
-        <name>Amenity__c</name>
-        <picklistValues>
-            <masterLabel>Gym</masterLabel>
-            <translation><!-- Gym --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Parking</masterLabel>
-            <translation><!-- Parking --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Pool</masterLabel>
-            <translation><!-- Pool --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- Count of Services Appointments --></label>
         <name>Count_of_Services_Appointments__c</name>
     </fields>
@@ -89,6 +73,10 @@
         <help><!-- Max number of occupants --></help>
         <label><!-- Max Occupants --></label>
         <name>Max_Occupants__c</name>
+    </fields>
+    <fields>
+        <label><!-- Slots Left --></label>
+        <name>Slots_Left__c</name>
     </fields>
     <layouts>
         <layout>Housing Layout</layout>
