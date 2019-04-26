@@ -90,14 +90,16 @@ public class ContactTriggerHelperMehodsTest
 @isTest static void SendEmailToApprovedContacttest()
 {
 	map<id,contact> oldMap = TestFactory.createOLDmap();
-		list<contact> updatedContact2 = new list<contact>();
+   	list<contact> newlist = [SELECT ID, NAME, EMAIL,Housing_Assignment_Count__c,Housing_Status__c FROM CONTACT];
+
+	list<contact> updatedContact2 = new list<contact>();
 	for(contact c: newlist)
 	{
         c.Housing_Status__c = OrgContants.PICKLISTVALUE_HOUSING_ASSIGNMENT[1].getLabel();
 		updatedContact2.add(c);
 	}
-	update updatedContact;
-	list<contact> newlist = [SELECT ID, NAME, EMAIL,Housing_Assignment_Count__c,Housing_Status__c FROM CONTACT];
+	update updatedContact2;
+	
 	
 	Test.startTest();
 
@@ -129,11 +131,5 @@ public class ContactTriggerHelperMehodsTest
 		}
 	Test.stopTest();
 }    
-    
-    
-    
-    
-    
-    
-    
+
 }

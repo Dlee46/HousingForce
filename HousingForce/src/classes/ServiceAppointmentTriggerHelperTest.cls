@@ -52,6 +52,7 @@ public class ServiceAppointmentTriggerHelperTest
  {
  	
  }
+
  /**************************************************************************
  * 	Purpose: To test queryForContacts
  * 	Author:	 Steven Zhao

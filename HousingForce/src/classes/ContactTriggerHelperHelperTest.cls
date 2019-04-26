@@ -90,7 +90,7 @@ public class ContactTriggerHelperHelperTest
 	 	
 	 	try
 	 	{
-	 		body2.add(ContactTriggerHelperHelperMethods.NewHousingApprovalMessage('1','2','3',null,'apples'));
+	 		body2.add(ContactTriggerHelperHelperMethods.NewHousingApprovalMessage('1','2','3','null','apples'));
 	 	}
 	 	catch(exception e)
 	 	{
