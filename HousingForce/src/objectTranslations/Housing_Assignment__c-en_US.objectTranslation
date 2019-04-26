@@ -9,10 +9,6 @@
         <value>Housing Assignments</value>
     </caseValues>
     <fields>
-        <label><!-- Arrival Date and Time --></label>
-        <name>Arrival_Date_and_Time__c</name>
-    </fields>
-    <fields>
         <label><!-- Contact --></label>
         <name>Contact__c</name>
         <relationshipLabel><!-- Housing Assignments --></relationshipLabel>
@@ -22,9 +18,9 @@
         <name>Housing__c</name>
         <relationshipLabel><!-- Housing Assignments --></relationshipLabel>
     </fields>
-    <fields>
-        <label><!-- Move Out Date and Time --></label>
-        <name>Move_Out_Date_and_Time__c</name>
-    </fields>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This is wrong gender housing error --></errorMessage>
+        <name>CheckGender</name>
+    </validationRules>
 </CustomObjectTranslation>

@@ -1,0 +1,63 @@
+!SESSION 2019-04-16 10:06:10.495 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\seedk\Desktop\Git WorkSpace\HousingForce2\HousingForce -product org.eclipse.epp.package.java.product
+
+!ENTRY mega.js.tern 1 0 2019-04-16 10:06:28.666
+!MESSAGE Started Node.js v5.9.1 (V8 v4.6.85.31) in 1.551 s
+
+!ENTRY mega.js.tern 1 0 2019-04-16 10:06:29.013
+!MESSAGE Loading tern.js...
+
+
+!ENTRY mega.js.tern 1 0 2019-04-16 10:06:29.083
+!MESSAGE Loading library ecma5
+
+
+!ENTRY mega.js.tern 1 0 2019-04-16 10:06:29.127
+!MESSAGE Loading library browser
+
+
+!ENTRY mega.js.tern 1 0 2019-04-16 10:06:29.178
+!MESSAGE Loading library ecma6
+
+
+!ENTRY mega.js.tern 1 0 2019-04-16 10:06:29.238
+!MESSAGE Loading plugin doc_comment
+
+
+!ENTRY mega.js.tern 1 0 2019-04-16 10:06:29.343
+!MESSAGE Loading plugin aura
+
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-16 10:06:29.533
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\seedk'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY mega.js.tern 1 0 2019-04-16 10:06:31.119
+!MESSAGE Tern.js (0.19.0) ready
+
+
+!ENTRY mega.js.tern 1 0 2019-04-16 10:06:41.698
+!MESSAGE ':core' project is not available. Please add '<module>:core</module>' to your list of partial build modules. If using para, set 'ide-search-all-files: true' and run 'para refresh'
+
+!ENTRY mega.js.tern 1 0 2019-04-16 10:06:41.755
+!MESSAGE Analyzed Lightning System JavaScript Support in 32.92 ms
+
+!ENTRY com.salesforce.ide.core 2 0 2019-04-16 10:06:59.352
+!MESSAGE  WARN [2019-04-16 10:06:59,322] (ConnectionFactory.java:clearCache:217) - No cached connections
+
+
+!ENTRY com.salesforce.ide.core 2 0 2019-04-16 10:06:59.357
+!MESSAGE  WARN [2019-04-16 10:06:59,356] (DescribeObjectRegistry.java:clearCache:660) - No cached describes
+
+
+!ENTRY com.salesforce.ide.core 2 0 2019-04-16 10:06:59.363
+!MESSAGE  WARN [2019-04-16 10:06:59,363] (MetadataFactory.java:clearCache:125) - No cached metadata stubs
+

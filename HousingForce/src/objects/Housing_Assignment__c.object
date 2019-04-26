@@ -52,15 +52,6 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>Arrival_Date_and_Time__c</fullName>
-        <externalId>false</externalId>
-        <label>Arrival Date and Time</label>
-        <required>true</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
         <fullName>Contact__c</fullName>
         <externalId>false</externalId>
         <label>Contact</label>
@@ -88,15 +79,6 @@
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
-    <fields>
-        <fullName>Move_Out_Date_and_Time__c</fullName>
-        <externalId>false</externalId>
-        <label>Move Out Date and Time</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
     <label>Housing Assignment</label>
     <listViews>
         <fullName>All</fullName>
@@ -111,4 +93,14 @@
     <pluralLabel>Housing Assignments</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>CheckGender</fullName>
+        <active>true</active>
+        <description>Checks if this persons gender is correct for the right housing i.e male = male or female = female</description>
+        <errorConditionFormula>IF( OR((TEXT(Contact__r.Gender__c) = &apos;Male&apos; &amp;&amp;  TEXT(Housing__r.Group_Designation__c)  = &apos;Men only&apos;),
+(TEXT(Contact__r.Gender__c) = &apos;Female&apos; &amp;&amp;  TEXT(Housing__r.Group_Designation__c)  = &apos;Women only&apos;)
+),False,TRUE)</errorConditionFormula>
+        <errorDisplayField>Contact__c</errorDisplayField>
+        <errorMessage>This is wrong gender housing error</errorMessage>
+    </validationRules>
 </CustomObject>

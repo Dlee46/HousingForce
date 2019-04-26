@@ -63,16 +63,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Date__c</fullName>
-        <description>Date of scheduled service Appointment</description>
-        <externalId>false</externalId>
-        <label>Date</label>
-        <required>true</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>Housing__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
@@ -85,31 +75,16 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
-        <fullName>Time__c</fullName>
-        <description>The time of the scheduled service</description>
-        <externalId>false</externalId>
-        <label>Time</label>
-        <required>true</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Time</type>
-    </fields>
     <label>Service Appointment</label>
     <listViews>
         <fullName>All</fullName>
-        <columns>NAME</columns>
-        <columns>Housing__c</columns>
-        <columns>Date__c</columns>
-        <columns>Time__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
     <nameField>
-        <displayFormat>S{00000000}</displayFormat>
-        <label>Service Appointment ID</label>
+        <label>Service Appointment Name</label>
         <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
+        <type>Text</type>
     </nameField>
     <pluralLabel>Service Appointments</pluralLabel>
     <searchLayouts/>

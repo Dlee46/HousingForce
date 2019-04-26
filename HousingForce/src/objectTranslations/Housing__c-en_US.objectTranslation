@@ -14,31 +14,15 @@
         <name>Active__c</name>
     </fields>
     <fields>
-        <label><!-- Address --></label>
-        <name>Address__c</name>
-    </fields>
-    <fields>
-        <label><!-- Amenities --></label>
-        <name>Amenities__c</name>
+        <label><!-- Amenity --></label>
+        <name>Amenity__c</name>
         <picklistValues>
             <masterLabel>Gym</masterLabel>
             <translation><!-- Gym --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Parking: Driveway</masterLabel>
-            <translation><!-- Parking: Driveway --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Parking: Garage</masterLabel>
-            <translation><!-- Parking: Garage --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Parking: Gated</masterLabel>
-            <translation><!-- Parking: Gated --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Parking: Passes</masterLabel>
-            <translation><!-- Parking: Passes --></translation>
+            <masterLabel>Parking</masterLabel>
+            <translation><!-- Parking --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Pool</masterLabel>
@@ -67,4 +51,17 @@
         <name>Max_Occupants__c</name>
     </fields>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+<<<<<<< HEAD
+        <errorMessage><!-- You cannot deactivate this housing unit if people are still living there or cant add people if its not activated. --></errorMessage>
+        <name>Check_ActiveCantBeDeactivated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot add people if the housing is deactivated. --></errorMessage>
+        <name>Check_ifDeactivatedCantAddTenants</name>
+=======
+        <errorMessage><!-- The number of occupants exceed the limit assigned to this location. --></errorMessage>
+        <name>Maximum_Occupants</name>
+>>>>>>> Testing
+    </validationRules>
 </CustomObjectTranslation>

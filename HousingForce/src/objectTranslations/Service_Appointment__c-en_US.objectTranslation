@@ -13,17 +13,9 @@
         <name>Company_Name__c</name>
     </fields>
     <fields>
-        <label><!-- Date --></label>
-        <name>Date__c</name>
-    </fields>
-    <fields>
         <label><!-- Housing --></label>
         <name>Housing__c</name>
         <relationshipLabel><!-- Service Appointments --></relationshipLabel>
-    </fields>
-    <fields>
-        <label><!-- Time --></label>
-        <name>Time__c</name>
     </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

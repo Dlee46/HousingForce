@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>AddCampaign</actionName>
@@ -101,6 +102,15 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Are they active within Housing</inlineHelpText>
+        <label>Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>AssistantName</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -133,9 +143,13 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
-        <fullName>Employee_Status__c</fullName>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
         <externalId>false</externalId>
-        <label>Employee Status</label>
+        <label>Gender</label>
         <required>true</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
@@ -144,36 +158,15 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>New Hire</fullName>
+                    <fullName>Male</fullName>
                     <default>false</default>
                 </value>
                 <value>
-                    <fullName>Contracted</fullName>
-                    <default>false</default>
-                </value>
-                <value>
-                    <fullName>On Project</fullName>
-                    <default>false</default>
-                </value>
-                <value>
-                    <fullName>Former</fullName>
+                    <fullName>Female</fullName>
                     <default>false</default>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>End_Date__c</fullName>
-        <description>The Date when the employee no longer works for Revature</description>
-        <externalId>false</externalId>
-        <label>End Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Fax</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>HasOptedOutOfEmail</fullName>
@@ -188,31 +181,12 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
-        <fullName>Housing_Status__c</fullName>
-        <defaultValue>&apos;Processing&apos;</defaultValue>
+        <fullName>Housing_Assignment_Count__c</fullName>
         <externalId>false</externalId>
-        <label>Housing Status</label>
-        <required>true</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Processing</fullName>
-                    <default>false</default>
-                </value>
-                <value>
-                    <fullName>Assigned</fullName>
-                    <default>false</default>
-                </value>
-                <value>
-                    <fullName>Vacated</fullName>
-                    <default>false</default>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
+        <label>Housing Assignment Count</label>
+        <summaryForeignKey>Housing_Assignment__c.Contact__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
     </fields>
     <fields>
         <fullName>Jigsaw</fullName>
@@ -294,51 +268,9 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
-        <fullName>Reason_for_leaving__c</fullName>
-        <externalId>false</externalId>
-        <label>Reason for leaving</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Released: Refused Signing Day</fullName>
-                    <default>false</default>
-                </value>
-                <value>
-                    <fullName>Released: Quality Control</fullName>
-                    <default>false</default>
-                </value>
-                <value>
-                    <fullName>Terminated: Contract Breach</fullName>
-                    <default>false</default>
-                </value>
-                <value>
-                    <fullName>Resigned: New Job Opportunity</fullName>
-                    <default>false</default>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>ReportsToId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Start_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Start Date</label>
-        <required>true</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Date</type>
     </fields>
     <fields>
         <fullName>Title</fullName>
@@ -346,14 +278,6 @@
     </fields>
     <listViews>
         <fullName>AllContacts</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>CONTACT.PHONE1</columns>
-        <columns>CONTACT.EMAIL</columns>
-        <columns>CONTACT.BIRTHDATE</columns>
-        <columns>Employee_Status__c</columns>
-        <columns>Start_Date__c</columns>
-        <columns>End_Date__c</columns>
-        <columns>Reason_for_leaving__c</columns>
         <filterScope>Everything</filterScope>
         <label>All Contacts</label>
     </listViews>
@@ -415,4 +339,22 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Check_IfActive</fullName>
+        <active>true</active>
+        <description>Throws Error if you  try to use this user when deactivated.</description>
+        <errorConditionFormula>if( Active__c = False &amp;&amp;  Housing_Assignment_Count__c != 0,true,false)</errorConditionFormula>
+        <errorMessage>This Person is deactivated Or is already in housing.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_IfContacthasHousing</fullName>
+        <active>true</active>
+        <description>Check if you have a housing assignment by check the housing assignment count</description>
+        <errorConditionFormula>Housing_Assignment_Count__c &gt; 1</errorConditionFormula>
+        <errorMessage>This person already have a housing unit</errorMessage>
+    </validationRules>
 </CustomObject>
+=======
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"/>
+
+>>>>>>> Testing
